@@ -1,9 +1,7 @@
 # Contributions 
 
-whuang88 
-
-
-
+Bolism233: setting up the conda environment to run the code, recreating the inital dataset in the paper
+whuang0: running tests on new influenza-like-illness dataset and debugging issues that arose
 
 
 # Self-Supervised Contrastive Learning for Long-term Forecasting
