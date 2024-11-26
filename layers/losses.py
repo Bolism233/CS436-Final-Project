@@ -241,8 +241,10 @@ class AutoConCI(nn.Module):  # AutoCon Channel Independence (CI) version for Mul
         local_distmap = (labels.unsqueeze(1) - labels.unsqueeze(2)).abs()  # (BC, T, T) ,  (C, L)
         local_distmap = local_distmap.reshape(self.batch_size, -1, T*T).cpu()
         acf_values = self.acf_values.unsqueeze(0).repeat(self.batch_size,1, 1)
+        
         # local_distmap = torch.gather(acf_values, 2, local_distmap).float().to(features.get_device())
         local_distmap = self.acf_values.to(local_distmap.device)[local_distmap.abs().long()].float()
+
         local_distmap = local_distmap.reshape(-1, T, T)
 
         neg_mask = torch.scatter(
