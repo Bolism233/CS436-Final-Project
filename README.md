@@ -1,3 +1,11 @@
+# Contributions 
+
+whuang88 
+
+
+
+
+
 # Self-Supervised Contrastive Learning for Long-term Forecasting
 
 This is an official repository for the paper, titled [Self-Supervised Contrastive Learning for Long-term Forecasting](https://openreview.net/forum?id=nBCuRzjqK7), accepted at ICLR'24.
