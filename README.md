@@ -4,6 +4,11 @@ Bolism233: setting up the conda environment to run the code, recreating the init
 
 whuang0: running tests on new influenza-like-illness dataset and debugging issues that arose
 
+# Changes We Made:
+We added a new dataset to ./dataset/illness folder. Renamed the old illness dataset to national_illness_old.csv
+Our new dataset is named as national_illness.csv. 
+Run the model with the new dataset using sh ./scripts/AutoCon_Illness.sh
+However, only the first script with prediction length 14 works.
 
 # Self-Supervised Contrastive Learning for Long-term Forecasting
 
